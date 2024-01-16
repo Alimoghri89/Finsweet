@@ -2379,6 +2379,30 @@ body {
   color: rgb(40 41 56 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .web-2-right div.card h3 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .web-2-right div.card h3 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .web-2-right div.card h3 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .web-2-right div.card h3 {
+    font-size: 28px;
+  }
+}
+
 .web-2-right div.card p {
   margin-top: 8px;
   font-family: Poppins, sans-serif;
