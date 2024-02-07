@@ -29,7 +29,6 @@ body {
       color: #282938;
       margin-bottom: 34px; }
     .website-container-1 .contact-header p {
-      width: 50%;
       color: #28293870;
       font-family: Poppins, sans-serif;
       font-size: 16px;
@@ -73,7 +72,8 @@ body {
             font-weight: 400;
             font-size: 16px;
             line-height: 28px;
-            color: black; }
+            color: black;
+            opacity: 40%; }
           .website-container-1 .contact-container .user-info div input:focus {
             outline: 2px solid #282938; }
       .website-container-1 .contact-container .user-info .input {
@@ -100,7 +100,8 @@ body {
           font-weight: 400;
           font-size: 16px;
           line-height: 28px;
-          color: black; }
+          color: black;
+          opacity: 40%; }
         .website-container-1 .contact-container .user-msg textarea:focus {
           outline: 2px solid #282938; }
     .website-container-1 .contact-container a {
@@ -123,6 +124,8 @@ body {
 
 /*--------------website-container-1-end---------->*/
 @media only screen and (min-width: 992px) {
+  .website-container-1 .contact-header p {
+    width: 50%; }
   .website-container-1 .contact-container a {
     align-self: unset; }
   .website-container-1 .contact-container .user-info {
