@@ -13,6 +13,7 @@ body {
   background-color: white; }
 
 .website-container-1 {
+  width: 90%;
   display: flex;
   flex-flow: column;
   gap: 30px;
@@ -20,6 +21,7 @@ body {
   height: auto;
   margin: 128px 0; }
   .website-container-1 .left-container {
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center; }
@@ -48,22 +50,28 @@ body {
       line-height: 28px;
       text-align: center; }
   .website-container-1 .right-container {
+    width: 100%;
     display: flex;
     justify-content: end; }
     .website-container-1 .right-container img {
       height: 100%; }
 
 .website-container-2 {
+  width: 90%;
   display: flex;
   flex-flow: column;
+  align-items: center;
   gap: 8px;
   background-color: #f4f5f5; }
   .website-container-2 .top-container {
+    width: 100%;
     display: flex;
     flex-flow: column;
     gap: 30px;
-    padding: 0 80px; }
+    padding: 80px 10px; }
     .website-container-2 .top-container .left-container {
+      width: 100%;
+      padding: 0 60px;
       display: flex;
       flex-flow: column;
       align-items: center;
@@ -83,6 +91,7 @@ body {
         font-weight: 600;
         line-height: 56px; }
       .website-container-2 .top-container .left-container p {
+        width: 100%;
         color: #28293870;
         font-family: Poppins, sans-serif;
         font-size: 16px;
@@ -90,10 +99,12 @@ body {
         font-weight: 400;
         line-height: 28px; }
     .website-container-2 .top-container .right-container {
+      width: 100%;
       display: flex;
       flex-flow: column;
       align-items: center;
-      text-align: center; }
+      text-align: center;
+      padding: 0 60px; }
       .website-container-2 .top-container .right-container h2 {
         color: #282938;
         font-family: Poppins, sans-serif;
@@ -102,6 +113,7 @@ body {
         font-weight: 600;
         line-height: 56px; }
       .website-container-2 .top-container .right-container p {
+        width: 100%;
         color: #28293870;
         font-family: Poppins, sans-serif;
         font-size: 16px;
@@ -113,7 +125,8 @@ body {
     background-image: url("../Pic/about-web-2.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    margin-bottom: 30px; }
 
 .website-container-3 {
   margin: 128px 0;
@@ -172,6 +185,7 @@ body {
   gap: 96px;
   align-items: center; }
   .website-container-4 .top-container {
+    width: 90%;
     display: flex;
     flex-flow: column;
     gap: 16px;
@@ -211,6 +225,7 @@ body {
       background-size: cover;
       background-position: center; }
   .website-container-4 .bot-container {
+    width: 90%;
     height: 50%;
     display: flex;
     flex-flow: column;
@@ -251,6 +266,7 @@ body {
       background-position: center; }
 
 .website-container-5 {
+  width: 90%;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -277,6 +293,7 @@ body {
       align-items: center;
       gap: 36px; }
       .website-container-5 .bot-container .web-5-tile-container .web-5-tile {
+        width: 100%;
         background-color: #f4f6fc;
         padding: 50px; }
         .website-container-5 .bot-container .web-5-tile-container .web-5-tile h4 {
@@ -326,7 +343,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 128px;
+  padding: 34px;
   gap: 48px;
   background-color: #f4f6fc;
   text-align: center; }
@@ -405,12 +422,20 @@ body {
           font-weight: 400;
           line-height: 28px; }
 
+@media only screen and (min-width: 768px) {
+  .website-container-5 .bot-container .web-5-tile-container .web-5-tile {
+    width: 70%; }
+  .website-container-6 {
+    padding: 64px; } }
+
 @media only screen and (min-width: 1200px) {
   .website-container-1 {
+    width: 80%;
     flex-flow: row;
     height: 336px;
-    gap: 0; }
+    gap: 30px; }
     .website-container-1 .left-container {
+      width: fit-content;
       height: 100%;
       justify-content: space-between;
       align-items: start; }
@@ -421,20 +446,28 @@ body {
         text-align: justify; }
     .website-container-1 .right-container img {
       height: 336px; }
-  .website-container-2 .top-container {
-    flex-flow: row; }
-    .website-container-2 .top-container .left-container {
-      align-items: start;
-      text-align: left;
-      justify-content: end; }
-      .website-container-2 .top-container .left-container h2 {
-        font-size: 38px; }
-    .website-container-2 .top-container .right-container {
-      align-items: start;
-      text-align: left;
-      justify-content: end; }
-      .website-container-2 .top-container .right-container h2 {
-        font-size: 38px; }
+  .website-container-2 {
+    width: 80%; }
+    .website-container-2 .top-container {
+      padding: 80px;
+      flex-flow: row; }
+      .website-container-2 .top-container .left-container {
+        padding: 0;
+        align-items: start;
+        text-align: left;
+        justify-content: end; }
+        .website-container-2 .top-container .left-container h2 {
+          font-size: 38px; }
+      .website-container-2 .top-container .right-container {
+        align-items: start;
+        text-align: left;
+        justify-content: end;
+        padding: 0; }
+        .website-container-2 .top-container .right-container h2 {
+          font-size: 38px; }
+    .website-container-2 .bot-container {
+      width: 100%;
+      margin-bottom: 0; }
   .website-container-3 .bot-container {
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
@@ -460,8 +493,7 @@ body {
         text-align: left;
         padding: 54px 0;
         height: 100%;
-        justify-content: space-around;
-      }
+        justify-content: space-around; }
       .website-container-4 .top-container .right-container {
         height: 100%;
         background-position: center; }
@@ -472,8 +504,7 @@ body {
         text-align: left;
         padding: 54px 0;
         height: 100%;
-        justify-content: space-around;
-      }
+        justify-content: space-around; }
       .website-container-4 .bot-container .right-container {
         height: 100%;
         background-position: center; }
@@ -487,13 +518,15 @@ body {
     grid-template-rows: auto; }
     .website-container-5 .bot-container .logo-container .user-number {
       align-items: start; }
-  .website-container-6 .member-container {
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-template-rows: auto;
-    justify-content: space-between; }
-    .website-container-6 .member-container .member .photo {
-      width: 150px;
-      height: 150px; }
-    .website-container-6 .member-container .member .info {
-      white-space: nowrap; } }
+  .website-container-6 {
+    padding: 128px; }
+    .website-container-6 .member-container {
+      display: grid;
+      grid-template-columns: 23% 23% 23% 23%;
+      grid-template-rows: auto;
+      justify-content: space-between; }
+      .website-container-6 .member-container .member .photo {
+        width: 150px;
+        height: 150px; }
+      .website-container-6 .member-container .member .info {
+        white-space: nowrap; } }

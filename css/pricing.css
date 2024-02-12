@@ -16,6 +16,7 @@ body {
   background-color: white; }
 
 .website-container-1 {
+  width: 90%;
   margin: 128px 0;
   display: flex;
   flex-flow: column;
@@ -46,6 +47,7 @@ body {
     gap: 30px;
     align-items: center; }
     .website-container-1 .cards-container .web-1-card-1 {
+      width: 100%;
       border-radius: 12px;
       display: flex;
       flex-flow: column;
@@ -253,46 +255,48 @@ body {
       line-height: 32px; }
 
 @media only screen and (min-width: 1200px) {
-  .website-container-1 .cards-container {
-    height: 744px;
-    flex-flow: row;
-    justify-content: space-between; }
-    .website-container-1 .cards-container .web-1-card-1 {
-      width: 30%;
-      height: 100%;
-      position: relative; }
-      .website-container-1 .cards-container .web-1-card-1 .plan-info {
-        position: absolute;
-        top: 64px;
-        padding: 0 48px;
-        align-items: start;
-        text-align: start; }
-        .website-container-1 .cards-container .web-1-card-1 .plan-info .plan-price {
-          white-space: nowrap; }
-        .website-container-1 .cards-container .web-1-card-1 .plan-info .plan-text {
-          align-items: start;
-          text-align: start; }
-      .website-container-1 .cards-container .web-1-card-1 .plan-options {
-        width: 100%; }
-      .website-container-1 .cards-container .web-1-card-1 .plan-btn {
-        white-space: nowrap; }
-      .website-container-1 .cards-container .web-1-card-1:hover {
+  .website-container-1 {
+    width: fit-content; }
+    .website-container-1 .cards-container {
+      height: 744px;
+      flex-flow: row;
+      justify-content: space-between; }
+      .website-container-1 .cards-container .web-1-card-1 {
         width: 30%;
         height: 100%;
         position: relative; }
-        .website-container-1 .cards-container .web-1-card-1:hover .plan-info {
+        .website-container-1 .cards-container .web-1-card-1 .plan-info {
           position: absolute;
           top: 64px;
+          padding: 0 48px;
           align-items: start;
-          text-align: start;
-          padding: 0 48px; }
-          .website-container-1 .cards-container .web-1-card-1:hover .plan-info .plan-price {
+          text-align: start; }
+          .website-container-1 .cards-container .web-1-card-1 .plan-info .plan-price {
             white-space: nowrap; }
-          .website-container-1 .cards-container .web-1-card-1:hover .plan-info .plan-text {
+          .website-container-1 .cards-container .web-1-card-1 .plan-info .plan-text {
             align-items: start;
             text-align: start; }
-        .website-container-1 .cards-container .web-1-card-1:hover .plan-btn {
+        .website-container-1 .cards-container .web-1-card-1 .plan-options {
+          width: 100%; }
+        .website-container-1 .cards-container .web-1-card-1 .plan-btn {
           white-space: nowrap; }
+        .website-container-1 .cards-container .web-1-card-1:hover {
+          width: 30%;
+          height: 100%;
+          position: relative; }
+          .website-container-1 .cards-container .web-1-card-1:hover .plan-info {
+            position: absolute;
+            top: 64px;
+            align-items: start;
+            text-align: start;
+            padding: 0 48px; }
+            .website-container-1 .cards-container .web-1-card-1:hover .plan-info .plan-price {
+              white-space: nowrap; }
+            .website-container-1 .cards-container .web-1-card-1:hover .plan-info .plan-text {
+              align-items: start;
+              text-align: start; }
+          .website-container-1 .cards-container .web-1-card-1:hover .plan-btn {
+            white-space: nowrap; }
   .website-container-2 {
     flex-flow: row;
     align-items: start; }

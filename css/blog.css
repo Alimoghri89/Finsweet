@@ -2025,7 +2025,7 @@ body {
 
 .website-container-1 h1 {
   margin-bottom: 16px;
-  width: 80%;
+  width: 100%;
   text-align: center;
   font-family: Poppins, sans-serif;
   font-size: 28px;
@@ -2037,6 +2037,7 @@ body {
 
 @media (min-width: 768px) {
   .website-container-1 h1 {
+    width: 80%;
     font-size: 38px;
   }
 }
@@ -2049,6 +2050,7 @@ body {
 
 .website-container-1 h6 {
   margin-bottom: 32px;
+  text-align: center;
   font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 500;

@@ -14,7 +14,7 @@ body {
 
 /*--------------website-container-1-start-------->*/
 .website-container-1 {
-  width: 70%;
+  width: 90%;
   margin: 128px 0; }
   .website-container-1 .contact-header {
     display: flex;
@@ -42,7 +42,7 @@ body {
     border-radius: 12px;
     display: flex;
     flex-flow: column;
-    padding: 64px;
+    padding: 12px;
     gap: 16px;
     justify-content: space-between; }
     .website-container-1 .contact-container .user-info {
@@ -63,6 +63,7 @@ body {
           color: black; }
         .website-container-1 .contact-container .user-info div input {
           height: 64px;
+          width: 100%;
           padding: 18px 32px;
           border-radius: 8px;
           background-color: unset;
@@ -124,10 +125,14 @@ body {
 
 /*--------------website-container-1-end---------->*/
 @media only screen and (min-width: 992px) {
-  .website-container-1 .contact-header p {
-    width: 50%; }
-  .website-container-1 .contact-container a {
-    align-self: unset; }
-  .website-container-1 .contact-container .user-info {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto; } }
+  .website-container-1 {
+    width: 70%; }
+    .website-container-1 .contact-header p {
+      width: 50%; }
+    .website-container-1 .contact-container {
+      padding: 64px; }
+      .website-container-1 .contact-container a {
+        align-self: unset; }
+      .website-container-1 .contact-container .user-info {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto; } }
